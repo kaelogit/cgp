@@ -38,7 +38,9 @@ export function Navbar() {
     <>
       <header className="sticky top-0 z-50 border-b border-[var(--cap-line)] bg-white">
         <div className="container-wide flex h-[4.5rem] items-center justify-between gap-3">
-          <Logo />
+          <div className="min-w-0 flex-1 pr-2">
+            <Logo />
+          </div>
           <nav className="hidden min-w-0 items-center gap-2 lg:flex xl:gap-3.5">
             {navLinks.map((link) => (
               <Link
@@ -60,7 +62,7 @@ export function Navbar() {
           </nav>
           <button
             type="button"
-            className="lg:hidden"
+            className="shrink-0 p-1 lg:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen((v) => !v)}
           >

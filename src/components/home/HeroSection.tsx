@@ -3,12 +3,10 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import {
   CYCLE_YEAR,
-  FULL_NAME,
   GRANTS_TOTAL,
   HELP_AREAS_SHORT,
   MAX_AWARD,
   ORG_BLURB,
-  SHORT_NAME,
 } from '@/lib/site';
 
 export function HeroSection() {
@@ -29,20 +27,17 @@ export function HeroSection() {
             'linear-gradient(115deg, rgba(8,28,78,0.96) 0%, rgba(11,36,102,0.84) 48%, rgba(250,100,87,0.42) 100%)',
         }}
       />
-      <div className="container-wide relative grid min-h-[88vh] items-end gap-10 py-20 lg:grid-cols-[1.35fr_0.9fr] lg:items-center lg:py-28">
+      <div className="container-wide relative grid min-h-[78vh] items-end gap-8 py-14 sm:min-h-[88vh] sm:gap-10 sm:py-20 lg:grid-cols-[1.35fr_0.9fr] lg:items-center lg:py-28">
         <div>
-          <p className="section-label text-[var(--cap-gold)]">
-            {SHORT_NAME} · {FULL_NAME}
-          </p>
-          <h1 className="headline-xl mt-5 max-w-3xl text-white">
+          <h1 className="headline-xl max-w-3xl text-white">
             Progress built
             <br />
             for people.
           </h1>
-          <p className="mt-7 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-white/80 sm:mt-7 sm:text-base md:text-lg">
             {ORG_BLURB} {HELP_AREAS_SHORT}
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-3 sm:mt-9">
             <Link href="/apply" className="btn-primary">
               Apply for CAP Grants
               <ArrowRight className="h-4 w-4" />
@@ -52,18 +47,20 @@ export function HeroSection() {
             </Link>
           </div>
         </div>
-        <aside className="border-l-4 border-[var(--cap-gold)] bg-[var(--cap-black)]/40 p-7 backdrop-blur-sm lg:p-8">
+        <aside className="border-l-4 border-[var(--cap-gold)] bg-[var(--cap-black)]/40 p-6 backdrop-blur-sm sm:p-7 lg:p-8">
           <p className="font-display text-sm tracking-[0.18em] text-[var(--cap-gold)]">
             CAP Grants {CYCLE_YEAR}
           </p>
-          <div className="mt-6 space-y-6">
+          <div className="mt-5 space-y-5 sm:mt-6 sm:space-y-6">
             <div>
-              <p className="font-display text-4xl text-white md:text-5xl">{GRANTS_TOTAL}</p>
+              <p className="font-display text-3xl text-white sm:text-4xl md:text-5xl">{GRANTS_TOTAL}</p>
               <p className="mt-1 text-sm text-white/70">in new resources provided</p>
             </div>
             <div className="h-px bg-white/20" />
             <div>
-              <p className="font-display text-4xl text-[var(--cap-red)] md:text-5xl">{MAX_AWARD}</p>
+              <p className="font-display text-3xl text-[var(--cap-red)] sm:text-4xl md:text-5xl">
+                {MAX_AWARD}
+              </p>
               <p className="mt-1 text-sm text-white/70">
                 for individuals, groups, orgs & projects under CAP {CYCLE_YEAR}
               </p>
