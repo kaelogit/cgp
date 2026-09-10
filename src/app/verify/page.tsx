@@ -5,13 +5,10 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { buildFaqPageJsonLd } from '@/data/faq';
 import { breadcrumbJsonLd, webPageJsonLd } from '@/lib/jsonld';
 import {
-  APPLY_FROM_EMAIL,
-  APPLY_FROM_NAME,
   CONTACT_EMAIL,
   FULL_NAME,
   SHORT_NAME,
   SITE_DOMAIN,
-  SITE_URL,
 } from '@/lib/site';
 
 const VERIFY_DESCRIPTION =
@@ -24,7 +21,7 @@ const verifyFaqs = [
   },
   {
     question: 'What are the official CAP email addresses?',
-    answer: `Official support and verification: ${CONTACT_EMAIL}. Application receipts: ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL}. After you apply, your assigned coordinator contacts you from their CAP email — that name and address are shared only after you submit.`,
+    answer: `Official support and verification: ${CONTACT_EMAIL}. The official website is ${SITE_DOMAIN}.`,
   },
   {
     question: 'Does CAP ask for passwords or payment to release a grant?',
@@ -33,7 +30,7 @@ const verifyFaqs = [
   },
   {
     question: 'What if the message used a name or title that sounded official?',
-    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification, and ${APPLY_FROM_EMAIL} for application receipts. Coordinator emails are issued only after you apply; when in doubt, email ${CONTACT_EMAIL} before you act.`,
+    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification. When in doubt, email ${CONTACT_EMAIL} before you act.`,
   },
 ];
 
@@ -78,14 +75,6 @@ export default function VerifyPage() {
             >
               {CONTACT_EMAIL}
             </a>
-            <p className="mt-3 text-sm text-[var(--cap-muted)]">
-              Application receipts: {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). After you apply, your
-              assigned coordinator contacts you by email — their name and address are shared only
-              after you submit. Website:{' '}
-              <a href={SITE_URL} className="font-medium text-[var(--cap-blue)]">
-                {SITE_DOMAIN}
-              </a>
-            </p>
             <a
               href={`mailto:${CONTACT_EMAIL}?subject=Please%20verify%20this%20contact`}
               className="btn-primary mt-6"
@@ -103,7 +92,7 @@ export default function VerifyPage() {
               {
                 icon: Mail,
                 title: 'Official email',
-                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL}. After you apply, your assigned coordinator writes from their CAP email — that contact is shared only after you submit.`,
+                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. If a message claims to be from CAP and the address does not match, stop and email support.`,
               },
               {
                 icon: ShieldCheck,
