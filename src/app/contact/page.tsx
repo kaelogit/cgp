@@ -1,0 +1,84 @@
+import { createMetadata } from '@/lib/metadata';
+import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
+  CONTACT_EMAIL,
+  RESPONSE_HOURS,
+} from '@/lib/site';
+import Link from 'next/link';
+
+export const metadata = createMetadata({
+  title: 'Contact CAP — Official Email for Applicants',
+  description:
+    'Official support: support@capgp.org. Application receipts: apply@capgp.org. After you apply, a coordinator contacts you by email within 24 hours.',
+  path: '/contact',
+});
+
+export default function ContactPage() {
+  return (
+    <div className="bg-white">
+      <section className="border-b border-[var(--cap-line)] bg-[var(--cap-paper)] pt-16 pb-12">
+        <div className="container-page max-w-3xl">
+          <p className="section-label">Contact</p>
+          <h1 className="mt-3 text-4xl">Talk to CAP by email</h1>
+          <p className="mt-4 leading-relaxed text-[var(--cap-muted)]">
+            Grant applications go through the Apply form. For questions, verification, or general
+            support, write {CONTACT_EMAIL}.
+          </p>
+        </div>
+      </section>
+      <section className="py-14">
+        <div className="container-page max-w-3xl space-y-8">
+          <div className="border border-[var(--cap-line)] p-8">
+            <p className="text-xs font-semibold tracking-wider text-[var(--cap-accent)] uppercase">
+              Official support
+            </p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="mt-3 inline-block text-xl font-semibold text-[var(--cap-accent)]"
+            >
+              {CONTACT_EMAIL}
+            </a>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
+              Use this address for verification, questions, and general help. Application receipts
+              come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}) only.
+            </p>
+          </div>
+          <div className="border border-[var(--cap-line)] p-8">
+            <p className="text-xs font-semibold tracking-wider text-[var(--cap-accent)] uppercase">
+              After you apply
+            </p>
+            <p className="mt-2 text-sm text-[var(--cap-muted)]">
+              A coordinator is assigned to your file after you submit an application.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
+              First reply on new applications is within {RESPONSE_HOURS} hours. Check inbox and spam.
+              Reply on the same thread so your file stays together.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="border-t border-[var(--cap-line)] pt-5">
+              <h2 className="text-lg">New grant request</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--cap-muted)]">
+                Use the application form. That is how CAP opens a file — not a social message or a
+                lookalike website.
+              </p>
+              <Link href="/apply" className="mt-4 inline-block text-sm font-semibold text-[var(--cap-accent)]">
+                Go to Apply
+              </Link>
+            </div>
+            <div className="border-t border-[var(--cap-line)] pt-5">
+              <h2 className="text-lg">Unsure if a message is real</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--cap-muted)]">
+                Pause and verify. Email {CONTACT_EMAIL} with who contacted you and what they asked.
+              </p>
+              <Link href="/verify" className="mt-4 inline-block text-sm font-semibold text-[var(--cap-accent)]">
+                Go to Verify
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
