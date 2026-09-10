@@ -47,8 +47,8 @@ export const APPLY_FROM_NAME = 'CAP Applications';
 export const RESPONSE_HOURS = 24;
 
 /**
- * Default coordinator assigned after apply.
- * Support/verify stay on support@ — Jordan writes from this address.
+ * Default coordinator assigned after apply (shown only after submit / in emails).
+ * Support/verify stay on support@ — coordinator writes from this address after assignment.
  */
 export const COORDINATOR_NAME = 'Jordan Hale';
 export const COORDINATOR_TITLE = 'CAP Grants Coordinator';

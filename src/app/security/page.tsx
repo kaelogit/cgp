@@ -5,8 +5,6 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_EMAIL,
-  COORDINATOR_NAME,
   SITE_DOMAIN,
 } from '@/lib/site';
 
@@ -46,12 +44,12 @@ export default function SecurityPage() {
             {
               icon: ShieldCheck,
               title: 'Official channels',
-              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, ${APPLY_FROM_EMAIL}, and ${COORDINATOR_EMAIL}. We will never ask for passwords.`,
+              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, and ${APPLY_FROM_EMAIL}. We will never ask for passwords.`,
             },
             {
               icon: Mail,
               title: 'Email response',
-              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and verification: ${CONTACT_EMAIL}. After you apply, ${COORDINATOR_NAME} writes from ${COORDINATOR_EMAIL} — reply on that thread.`,
+              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and verification: ${CONTACT_EMAIL}. After you apply, your assigned coordinator contacts you by email — reply on that thread. Their name and address are shared only after you submit.`,
             },
           ].map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">

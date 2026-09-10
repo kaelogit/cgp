@@ -1,5 +1,5 @@
 import { createMetadata } from '@/lib/metadata';
-import { applicantContactWithin, CONTACT_EMAIL, COORDINATOR_EMAIL, COORDINATOR_NAME, RESPONSE_HOURS } from '@/lib/site';
+import { applicantContactWithin, CONTACT_EMAIL, RESPONSE_HOURS } from '@/lib/site';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ const steps = [
   },
   {
     title: 'Contact',
-    body: `After you apply, ${COORDINATOR_NAME} writes from ${COORDINATOR_EMAIL}. For general support or to verify a message, use ${CONTACT_EMAIL}. If you are unsure whether a message is real, use the Verify page first.`,
+    body: `After you apply, a CAP grants coordinator is assigned to your file and contacts you by email. For general support or to verify a message, use ${CONTACT_EMAIL}. If you are unsure whether a message is real, use the Verify page first.`,
   },
 ];
 

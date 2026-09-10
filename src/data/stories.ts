@@ -16,7 +16,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I stopped choosing between the pharmacy and the grocery list.',
     story: [
       'I taught myself to live small after my husband died. The pension covered the house, most months, until the specialist visits stacked up. I was stretching prescriptions and skipping the extras I used to enjoy without thinking. I am not dramatic. I am a widow who kept the lights on and hoped the next envelope was not another bill.',
-      'I applied to CAP because a neighbor said grants were not loans. I almost did not believe that. I had been offered “help” before that turned into interest. Jordan emailed within a day and asked clear questions. I answered them from my kitchen table with the statements in a stack beside the salt shaker.',
+      'I applied to CAP because a neighbor said grants were not loans. I almost did not believe that. I had been offered “help” before that turned into interest. My coordinator emailed within a day and asked clear questions. I answered them from my kitchen table with the statements in a stack beside the salt shaker.',
       'The $165,000 grant closed the medical bills that had been sitting on the counter. I sleep through the night again. I still clip coupons. I just do not cry over envelopes anymore. If you are a senior reading this and you are tired, apply. Asking did not cost me my dignity. It gave some of it back.',
     ],
   },
@@ -64,7 +64,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'Forty-one years in a classroom should not end in a collection letter.',
     story: [
       'I retired at sixty-seven with a modest pension and a spine that had other plans. Physical therapy was not optional. The statements arrived faster than the reimbursement.',
-      'A former student told me CAP awards grants to retired teachers. I applied because I was out of pride and out of time. Jordan’s email was plain. I liked that.',
+      'A former student told me CAP awards grants to retired teachers. I applied because I was out of pride and out of time. My coordinator’s email was plain. I liked that.',
       'The $125,000 grant paid the therapy and the remaining hospital share. I walk the river path again. Slowly. But I walk.',
     ],
   },
@@ -112,7 +112,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I could finally tell the hospital I was done owing them.',
     story: [
       'After the accident I learned two languages: pain, and invoices. Insurance paid a portion. Collections called about the rest. I was working with a brace and a phone that would not stop buzzing.',
-      'CAP said paying medical bills is one of the reasons people apply. I wrote that on the form so I would not talk myself out of it. Helen asked for the statements. I sent every page.',
+      'CAP said paying medical bills is one of the reasons people apply. I wrote that on the form so I would not talk myself out of it. My coordinator asked for the statements. I sent every page.',
       'The $180,000 grant closed the hospital file. I still have physical therapy. I do not have a collector saved as “Unknown.” If you are sitting with medical bills, you are not the first person CAP has heard from today.',
     ],
   },
@@ -160,7 +160,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'The house was never fancy. It just needed to be ours before winter.',
     story: [
       'We had a contract on a small ranch with a furnace that worked and a yard the dog could actually use. The lender approved us and then the gap at closing did not. I thought we would lose it the way we lost the last one.',
-      'Buying a home is one of the reasons CAP says people should apply. I wrote the numbers without a speech. Helen asked two questions. I answered them the same night.',
+      'Buying a home is one of the reasons CAP says people should apply. I wrote the numbers without a speech. My coordinator asked two questions. I answered them the same night.',
       'The $285,000 grant held the closing. We moved in October. The first snow I stood in the doorway with a mug and did not have to ask a landlord if the heat would be on. That is the whole story. Thank you is not large enough, but it is honest.',
     ],
   },
@@ -184,7 +184,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'My need did not fit one box. They still read the whole letter.',
     story: [
       'It was medical copays and a grandson’s school fees and a water heater in the same season. I did not know which category to pick. I chose financial assistance and wrote the truth.',
-      'Center for American Progress said completeness matters more than a perfect label. I was complete. I was not elegant. Helen treated the letter like a file, not a complaint.',
+      'Center for American Progress said completeness matters more than a perfect label. I was complete. I was not elegant. My coordinator treated the letter like a file, not a complaint.',
       'The $135,000 grant covered the heater, the copays, and the remaining school costs. I can breathe in my own kitchen again. If you are looking for financial assistance and your life is more than one checkbox, you are still allowed to apply.',
     ],
   },
@@ -220,7 +220,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'The treatment worked. The invoices almost undid the treatment.',
     story: [
       'Cancer is a medical story and a money story at the same time. Insurance paid a share. The rest sat in a folder I was afraid to open. I was well enough to work part-time and not well enough to ignore the hospital.',
-      'Paying medical bills is one of the reasons CAP exists. I applied on a Tuesday night when I could not sleep. Jordan emailed within a day. I sent statements. I did not perform gratitude in advance. I was too tired.',
+      'Paying medical bills is one of the reasons CAP exists. I applied on a Tuesday night when I could not sleep. My coordinator emailed within a day. I sent statements. I did not perform gratitude in advance. I was too tired.',
       'The $310,000 grant closed the oncology balance. I still have scans. I do not have a collector. If you are looking at medical bills and wondering whether a grant is real, CAP grants are not loans. That sentence is why I applied.',
     ],
   },
@@ -245,7 +245,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'I spent fifteen years in corporate wellness before I knew what I wanted my own practice to look like. I had savings. I had referrals from colleagues who kept asking when I would hang my own shingle. What I did not want was another debt product tied to my personal credit while I was still employed full time and paying a mortgage I actually liked.',
       'For two years I kept a spreadsheet: lease quotes, equipment, licensing, payroll for two hires, and the month-by-month runway if I left without a safety net. The numbers worked on paper. The loan terms did not. Every bank conversation ended with the same question — how much of your house are you willing to put on this?',
-      'CAP does not ask you to prove you are broke. I applied under business and wrote exactly what the grant would fund. Jordan emailed within a day with follow-up questions about the lease term and the hire timeline. No one treated a comfortable income like a disqualifier. No one asked me to justify why I was not simply writing a check.',
+      'CAP does not ask you to prove you are broke. I applied under business and wrote exactly what the grant would fund. My coordinator emailed within a day with follow-up questions about the lease term and the hire timeline. No one treated a comfortable income like a disqualifier. No one asked me to justify why I was not simply writing a check.',
       'The $420,000 grant opened Chen Integrative Health in Stamford. I left my corporate role on my timeline, not because a bank note forced me. Sixteen months later we are fully booked and I have hired a third clinician. If you are successful on paper and still have a real goal for grant money, apply anyway. They reviewed my file like a file.',
     ],
   },
@@ -271,7 +271,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'I am a director at a logistics firm. I manage three regions and a payroll I do not take lightly. I did not apply to CAP because I was struggling. I applied because an executive MBA would change how I lead — and I was not interested in adding six figures of student debt at fifty-one while still supporting a household and two kids in college.',
       'My employer would reimburse a portion. Not all. The residencies required travel. The remaining tuition was real even for someone with a good salary. I had the income to service a loan. I did not want twenty years of payments for a degree I was pursuing to build something, not to escape something.',
-      'Going to school is listed as its own category. I wrote the program, the remaining tuition, travel for residencies, and what completing it would let me build inside my company. The application took one evening at my desk. Helen replied the next morning with two clarifying questions. No pity. Just process.',
+      'Going to school is listed as its own category. I wrote the program, the remaining tuition, travel for residencies, and what completing it would let me build inside my company. The application took one evening at my desk. My coordinator replied the next morning with two clarifying questions. No pity. Just process.',
       'The $325,000 grant covered the balance of the program. I graduated last spring. I still have my job. I do not have a loan servicer. Wealthy people apply too — they just do not always say it out loud. I am saying it now so someone else does not talk themselves out of a complete file.',
     ],
   },
@@ -284,7 +284,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'I was a vice president in consumer goods. Good title. Good stock. The wine label I wanted to start lived in notebooks for four years — vineyard contacts, a name I loved, a tasting-room sketch on the back of a conference agenda. I had capital, but I did not want to drain retirement accounts or take a secured business loan on our house in Napa for a first vintage run.',
       'I ran the numbers with a consultant anyway. Barrels, bottling, licensing, a small tasting room build-out, the first harvest contract — it added up faster than my spreadsheet personality liked. I could fund half comfortably. The other half as debt changed the risk in ways I was not willing to accept for a first release.',
-      'CAP reviewed the business category like any other file. I listed every line item and said clearly: this is growth capital, not emergency money. Helen asked about the harvest contract and the distributor letters I had in draft. I sent them that week. The tone stayed professional. I appreciated that more than I expected.',
+      'CAP reviewed the business category like any other file. I listed every line item and said clearly: this is growth capital, not emergency money. My coordinator asked about the harvest contract and the distributor letters I had in draft. I sent them that week. The tone stayed professional. I appreciated that more than I expected.',
       'The $485,000 grant launched Fitzgerald Cellars. Our first release sold out in eleven weeks. I work harder than I did in corporate — and I choose the work. If you have already succeeded once and want grant funding for the next thing, do not talk yourself out of applying because your W-2 looks fine.',
     ],
   },
@@ -297,7 +297,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'I am a retired attorney. My wife and I own our home in Charlottesville outright. We wanted to add a proper guest wing and accessibility upgrades so our parents could visit without stairs becoming a negotiation every holiday. My father is eighty-one. He should not have to choose between seeing his grandchildren and climbing fourteen steps.',
       'We got three contractor bids. The number was real. It was also the kind of project people assume you simply write a check for when you have no mortgage. We could. We did not want a home-equity line we would be servicing for a decade on a house we already owned free and clear.',
-      'This was not a foreclosure story. It was a renovation with a purpose. I applied under housing, listed the contractor bid, the timeline, and why a grant fit our goal better than debt. Helen replied within twenty-four hours. No one asked why we had not sold investments first. They asked whether the bid included the accessibility specs.',
+      'This was not a foreclosure story. It was a renovation with a purpose. I applied under housing, listed the contractor bid, the timeline, and why a grant fit our goal better than debt. My coordinator replied within twenty-four hours. No one asked why we had not sold investments first. They asked whether the bid included the accessibility specs.',
       'The $435,000 grant funded the addition. My father slept in the new room last Thanksgiving. My mother made coffee in a kitchen that does not require stairs. No bank called me on the first of the month. If your need is improvement and not survival, you still belong in the queue.',
     ],
   },
@@ -310,7 +310,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'I am a hospitalist at a major Seattle medical center. I earn a good living. I understand how insurance arguments work — I see them from the inside. When a specialized recovery program was recommended after my own surgery, my plan covered part of it and argued about the rest for months.',
       'I could pay out of pocket. I did not want to liquidate investments for care I believed should be fundable another way, and I resented the idea that the only path was a personal loan or a payment plan with a logo on it. I had treated patients in the same bind. I did not think being a physician exempted me from asking.',
-      'I applied under medical care and documented what was denied, what remained, and why the program mattered for my return to work. Helen did not ask why I had not simply written a check. She asked whether the program acceptance letter was included. It was. The file moved.',
+      'I applied under medical care and documented what was denied, what remained, and why the program mattered for my return to work. My coordinator did not ask why I had not simply written a check. They asked whether the program acceptance letter was included. It was. The file moved.',
       'The $375,000 grant covered the program in full. I am back on my regular schedule in the OR. High income does not mean the category is closed. It means you describe the goal clearly and let the file speak. I tell colleagues that now when they hesitate.',
     ],
   },

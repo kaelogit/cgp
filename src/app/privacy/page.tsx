@@ -1,6 +1,6 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, COORDINATOR_EMAIL, COORDINATOR_NAME, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'CAP Privacy Policy — How We Handle Applications',
@@ -28,9 +28,9 @@ export default function PrivacyPage() {
       </LegalSection>
       <LegalSection title="Email">
         Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Support and
-        verification use {CONTACT_EMAIL}. After you apply, {COORDINATOR_NAME} contacts you from{' '}
-        {COORDINATOR_EMAIL} — reply on that thread. Check inbox and spam. We will never ask for your
-        email or banking passwords.
+        verification use {CONTACT_EMAIL}. After you apply, your assigned coordinator contacts you by
+        email — their name and address are shared only after you submit. Reply on that thread. Check
+        inbox and spam. We will never ask for your email or banking passwords.
       </LegalSection>
       <LegalSection title="Access and deletion">
         You may request access, correction, or deletion of your personal information by emailing{' '}

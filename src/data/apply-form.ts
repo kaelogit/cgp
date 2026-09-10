@@ -2,8 +2,6 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_EMAIL,
-  COORDINATOR_NAME,
   RESPONSE_HOURS,
 } from '@/lib/site';
 
@@ -155,7 +153,7 @@ export const APPLY_FAQS = [
   },
   {
     q: 'How soon will I hear back?',
-    a: `${APPLY_FROM_NAME} sends a receipt from ${APPLY_FROM_EMAIL}. ${COORDINATOR_NAME} (${COORDINATOR_EMAIL}) then contacts you within ${RESPONSE_HOURS} hours. Check inbox and spam, then reply on that thread.`,
+    a: `${APPLY_FROM_NAME} sends a receipt from ${APPLY_FROM_EMAIL}. A CAP grants coordinator is then assigned to your file and contacts you within ${RESPONSE_HOURS} hours. Check inbox and spam, then reply on that thread.`,
   },
   {
     q: 'What should I write in my message?',

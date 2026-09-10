@@ -319,7 +319,7 @@ export default function ApplyPage() {
               </p>
               <p className="flex gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--cap-accent)]" />
-                Coordinator · {COORDINATOR_EMAIL}
+                A coordinator is assigned to your file
               </p>
               <p className="flex gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--cap-accent)]" />
