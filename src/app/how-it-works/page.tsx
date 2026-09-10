@@ -1,5 +1,5 @@
 import { createMetadata } from '@/lib/metadata';
-import { applicantContactWithin, CONTACT_EMAIL, RESPONSE_HOURS } from '@/lib/site';
+import { applicantContactWithin, CONTACT_EMAIL, COORDINATOR_EMAIL, COORDINATOR_NAME, RESPONSE_HOURS } from '@/lib/site';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ const steps = [
   },
   {
     title: 'Background',
-    body: 'Center for American Prosperity issues billions of dollars in grant money each year to a variety of groups. Grants are awarded to individuals each and every day. Your file is still reviewed on its own merits.',
+    body: 'Center for American Progress issues billions of dollars in grant money each year to a variety of groups. Grants are awarded to individuals each and every day. Your file is still reviewed on its own merits.',
   },
   {
     title: 'Submit',
@@ -46,7 +46,7 @@ const steps = [
   },
   {
     title: 'Contact',
-    body: `Official follow-up is email only: ${CONTACT_EMAIL}. If you are unsure whether a message is real, use the Verify page first.`,
+    body: `After you apply, ${COORDINATOR_NAME} writes from ${COORDINATOR_EMAIL}. For general support or to verify a message, use ${CONTACT_EMAIL}. If you are unsure whether a message is real, use the Verify page first.`,
   },
 ];
 

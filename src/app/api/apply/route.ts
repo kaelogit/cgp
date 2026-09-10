@@ -11,9 +11,11 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
   COORDINATOR_NAME,
   COORDINATOR_TITLE,
   FULL_NAME,
+  RESPONSE_HOURS,
   SHORT_NAME,
 } from '@/lib/site';
 
@@ -113,13 +115,13 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from,
       to: parsed.email,
-      replyTo: CONTACT_EMAIL,
+      replyTo: COORDINATOR_EMAIL,
       subject: 'We received your CAP grant application',
       html: `
         <p>Dear ${escapeHtml(parsed.name)},</p>
         <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
         <p>CAP grants are not loans. Applying does not create debt.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(CONTACT_EMAIL)}. Please check your inbox and spam folder, then reply on that thread.</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(COORDINATOR_EMAIL)} within ${RESPONSE_HOURS} hours. Please check your inbox and spam folder, then reply on that thread. For general support or to verify a message, write ${escapeHtml(CONTACT_EMAIL)}.</p>
         <p>You took a brave step by asking. We are glad you did.</p>
         <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
       `,

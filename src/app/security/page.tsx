@@ -5,13 +5,15 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   SITE_DOMAIN,
 } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'CAP Official Emails — How to Verify a Message',
   description:
-    'Official CAP contact is support@capgp.org and apply@capgp.org on capgp.org. We never ask for passwords.',
+    'Official CAP support is support@capgrantprogram.com. Application receipts: apply@capgrantprogram.com. We never ask for passwords.',
   path: '/security',
 });
 
@@ -23,7 +25,7 @@ export default function SecurityPage() {
           <p className="section-label">Security</p>
           <h1 className="mt-3 text-4xl">Trust, privacy, and how to verify us</h1>
           <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
-            Center for American Prosperity protects every applicant — and helps people confirm
+            Center for American Progress protects every applicant — and helps people confirm
             whether a grant message is really from us.
           </p>
         </div>
@@ -44,12 +46,12 @@ export default function SecurityPage() {
             {
               icon: ShieldCheck,
               title: 'Official channels',
-              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, and ${APPLY_FROM_EMAIL}. We will never ask for passwords.`,
+              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, ${APPLY_FROM_EMAIL}, and ${COORDINATOR_EMAIL}. We will never ask for passwords.`,
             },
             {
               icon: Mail,
               title: 'Email response',
-              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and follow-up after you apply: ${CONTACT_EMAIL}. Check inbox and spam.`,
+              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and verification: ${CONTACT_EMAIL}. After you apply, ${COORDINATOR_NAME} writes from ${COORDINATOR_EMAIL} — reply on that thread.`,
             },
           ].map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">

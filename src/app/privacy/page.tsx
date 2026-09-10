@@ -1,11 +1,11 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, COORDINATOR_EMAIL, COORDINATOR_NAME, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'CAP Privacy Policy — How We Handle Applications',
   description:
-    'How Center for American Prosperity uses the information you submit on capgp.org. Official follow-up is by email. We never ask for passwords.',
+    'How Center for American Progress uses the information you submit on capgrantprogram.com. Official support is by email. We never ask for passwords.',
   path: '/privacy',
 });
 
@@ -27,9 +27,10 @@ export default function PrivacyPage() {
         to third parties.
       </LegalSection>
       <LegalSection title="Email">
-        Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Official follow-up
-        comes from {CONTACT_EMAIL}. Check inbox and spam. We will never ask for your email or
-        banking passwords.
+        Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Support and
+        verification use {CONTACT_EMAIL}. After you apply, {COORDINATOR_NAME} contacts you from{' '}
+        {COORDINATOR_EMAIL} — reply on that thread. Check inbox and spam. We will never ask for your
+        email or banking passwords.
       </LegalSection>
       <LegalSection title="Access and deletion">
         You may request access, correction, or deletion of your personal information by emailing{' '}

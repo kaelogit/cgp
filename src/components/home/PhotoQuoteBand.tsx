@@ -16,7 +16,7 @@ export function PhotoQuoteBand() {
           “Opportunity is not a slogan. It is funding, policy, and people willing to act.”
         </p>
         <p className="mt-8 text-sm font-semibold tracking-[0.14em] text-[var(--cap-gold)] uppercase">
-          Center for American Prosperity
+          Center for American Progress
         </p>
       </div>
     </section>

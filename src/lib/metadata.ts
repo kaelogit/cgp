@@ -8,9 +8,9 @@ import {
   SITE_URL,
 } from '@/lib/site';
 
-export const DEFAULT_TITLE = 'CAP — Center for American Prosperity | CAP Grants';
+export const DEFAULT_TITLE = 'CAP — Center for American Progress | CAP Grants';
 export const DEFAULT_DESCRIPTION =
-  'Official Center for American Prosperity site. CAP Grants has provided nearly $60 million in new resources. CAP 2026 funds projects up to $1 million. Grants — not loans.';
+  'Official Center for American Progress site. CAP Grants has provided nearly $60 million in new resources. CAP 2026 funds projects up to $1 million. Grants — not loans.';
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');
@@ -57,7 +57,7 @@ export function createMetadata(options: {
           secureUrl: LOGO_URL,
           width: 1295,
           height: 1215,
-          alt: `${SHORT_NAME} — Center for American Prosperity`,
+          alt: `${SHORT_NAME} — Center for American Progress`,
           type: 'image/png',
         },
       ],

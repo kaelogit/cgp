@@ -1,5 +1,8 @@
 import {
+  APPLY_FROM_EMAIL,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   CYCLE_YEAR,
   ELIGIBILITY_OPEN,
   FULL_NAME,
@@ -48,7 +51,7 @@ export const faqItems = [
   },
   {
     question: 'How do I know this site is official?',
-    answer: `The official site is ${SITE_DOMAIN}. Official email uses @${SITE_DOMAIN}. Contact ${CONTACT_EMAIL} if something looks wrong. Use Verify on this site for confirmation steps.`,
+    answer: `The official site is ${SITE_DOMAIN}. Official emails: ${CONTACT_EMAIL} (support/verify), ${APPLY_FROM_EMAIL} (application receipts), and ${COORDINATOR_EMAIL} (${COORDINATOR_NAME}, assigned after you apply). Contact ${CONTACT_EMAIL} if something looks wrong. Use Verify on this site for confirmation steps.`,
   },
   {
     question: 'Does applying cost money?',

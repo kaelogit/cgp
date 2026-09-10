@@ -8,6 +8,8 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   FULL_NAME,
   SHORT_NAME,
   SITE_DOMAIN,
@@ -24,7 +26,7 @@ const verifyFaqs = [
   },
   {
     question: 'What are the official CAP email addresses?',
-    answer: `Official support is ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL} only. Messages from other addresses are not official.`,
+    answer: `Official support and verification: ${CONTACT_EMAIL}. Application receipts: ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL}. After you apply, your assigned coordinator — ${COORDINATOR_NAME} — writes from ${COORDINATOR_EMAIL}.`,
   },
   {
     question: 'Does CAP ask for passwords or payment to release a grant?',
@@ -33,7 +35,7 @@ const verifyFaqs = [
   },
   {
     question: 'What if the message used a name or title that sounded official?',
-    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification, ${APPLY_FROM_EMAIL} for application receipts only. When in doubt, email support before you act.`,
+    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification, ${APPLY_FROM_EMAIL} for application receipts, and ${COORDINATOR_EMAIL} for your assigned coordinator (${COORDINATOR_NAME}). When in doubt, email support before you act.`,
   },
 ];
 
@@ -79,7 +81,8 @@ export default function VerifyPage() {
               {CONTACT_EMAIL}
             </a>
             <p className="mt-3 text-sm text-[var(--cap-muted)]">
-              Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Website:{' '}
+              Application receipts: {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Assigned coordinator:{' '}
+              {COORDINATOR_NAME} ({COORDINATOR_EMAIL}). Website:{' '}
               <a href={SITE_URL} className="font-medium text-[var(--cap-blue)]">
                 {SITE_DOMAIN}
               </a>
@@ -101,7 +104,7 @@ export default function VerifyPage() {
               {
                 icon: Mail,
                 title: 'Official email',
-                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}) only.`,
+                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL}. After you apply, ${COORDINATOR_NAME} writes from ${COORDINATOR_EMAIL}.`,
               },
               {
                 icon: ShieldCheck,

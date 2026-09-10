@@ -21,7 +21,7 @@ const pairs = [
   ['var(--gp-muted)', 'var(--cap-muted)'],
   ['var(--gp-line)', 'var(--cap-line)'],
   ['idagrantprogram.com', 'capgp.org'],
-  ['International Development Association', 'Center for American Prosperity'],
+  ['International Development Association', 'Center for American Progress'],
   ['Helen Marsh', 'Jordan Hale'],
   ['Helen emailed', 'Jordan emailed'],
   ['Helen\u2019s', 'Jordan\u2019s'],

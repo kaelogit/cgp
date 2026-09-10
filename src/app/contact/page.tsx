@@ -3,6 +3,8 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   RESPONSE_HOURS,
 } from '@/lib/site';
 import Link from 'next/link';
@@ -10,7 +12,7 @@ import Link from 'next/link';
 export const metadata = createMetadata({
   title: 'Contact CAP — Official Email for Applicants',
   description:
-    'Official support: support@capgp.org. Application receipts: apply@capgp.org. After you apply, a coordinator contacts you by email within 24 hours.',
+    'Official support: support@capgrantprogram.com. Application receipts: apply@capgrantprogram.com. Assigned coordinator: jordanhale@capgrantprogram.com.',
   path: '/contact',
 });
 
@@ -49,7 +51,8 @@ export default function ContactPage() {
               After you apply
             </p>
             <p className="mt-2 text-sm text-[var(--cap-muted)]">
-              A coordinator is assigned to your file after you submit an application.
+              {COORDINATOR_NAME} is assigned to your file after you submit an application and writes
+              from {COORDINATOR_EMAIL}.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
               First reply on new applications is within {RESPONSE_HOURS} hours. Check inbox and spam.

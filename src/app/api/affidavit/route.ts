@@ -6,7 +6,7 @@ import {
   getSmtpCredentials,
   mailUnavailableMessage,
 } from '@/lib/mail';
-import { CONTACT_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, FULL_NAME, SITE_DOMAIN } from '@/lib/site';
+import { CONTACT_EMAIL, COORDINATOR_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, FULL_NAME, SITE_DOMAIN } from '@/lib/site';
 
 function str(v: unknown): string {
   return typeof v === 'string' ? v.trim() : '';
@@ -132,18 +132,18 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: `"${COORDINATOR_NAME}, ${FULL_NAME}" <${creds.user}>`,
       to: payload.email,
-      replyTo: CONTACT_EMAIL,
+      replyTo: COORDINATOR_EMAIL,
       subject: `Affidavit received — ${FULL_NAME}`,
       html: `
         <p>Dear ${escapeHtml(payload.fullName)},</p>
-        <p>We have received your Affidavit of Eligibility and Release for the Center for American Prosperity.</p>
+        <p>We have received your Affidavit of Eligibility and Release for the Center for American Progress.</p>
         <p>Grant amount on file: <strong>${escapeHtml(payload.supportAmount)}</strong><br/>
         Date signed: <strong>${escapeHtml(payload.signDate)}</strong></p>
-        <p>Your affidavit is now with our office for review. ${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, will email you with the next step.</p>
+        <p>Your affidavit is now with our office for review. ${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, will email you with the next step from ${escapeHtml(COORDINATOR_EMAIL)}.</p>
         <p>This confirmation is not a final funding release. CAP awards are grants, not loans.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(CONTACT_EMAIL)}</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(COORDINATOR_EMAIL)}</p>
       `,
-      text: `Dear ${payload.fullName},\n\nWe have received your Affidavit of Eligibility and Release. ${COORDINATOR_NAME} will email you with the next step.\n\n${FULL_NAME}\n${CONTACT_EMAIL}`,
+      text: `Dear ${payload.fullName},\n\nWe have received your Affidavit of Eligibility and Release. ${COORDINATOR_NAME} will email you with the next step from ${COORDINATOR_EMAIL}.\n\n${FULL_NAME}\n${COORDINATOR_EMAIL}`,
     });
 
     return NextResponse.json({ ok: true });

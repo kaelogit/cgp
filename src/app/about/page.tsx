@@ -11,7 +11,7 @@ import {
 } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: `About ${SHORT_NAME} — Center for American Prosperity`,
+  title: `About ${SHORT_NAME} — Center for American Progress`,
   description: ORG_BLURB,
   path: '/about',
 });
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <h1 className="headline-lg mt-4 text-white">
             Center for
             <br />
-            American Prosperity
+            American Progress
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80">{ORG_BLURB}</p>
         </div>

@@ -17,6 +17,8 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   HELP_AREAS_SHORT,
   RESPONSE_HOURS,
 } from '@/lib/site';
@@ -87,7 +89,7 @@ export default function ApplyPage() {
           <p className="section-label">Apply</p>
           <h1 className="mt-3 text-4xl text-white">Your CAP grant application</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
-            Center for American Prosperity issues billions of dollars in CAP grant money each year.
+            Center for American Progress issues billions of dollars in CAP grant money each year.
             Awards go to individuals every day. CAP programs are not loans. {HELP_AREAS_SHORT}
           </p>
           <p className="mt-3 text-sm text-white/70">{applicantResponseBadge()}</p>
@@ -102,14 +104,15 @@ export default function ApplyPage() {
                 <CheckCircle2 className="h-10 w-10 text-[var(--cap-accent)]" />
                 <h2 className="mt-4 text-2xl">Thank you. Your file is with us.</h2>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
-                  Your application has been received. An CAP grants coordinator will be assigned to
+                  Your application has been received. A CAP grants coordinator will be assigned to
                   your file and will contact you by email. This is a grant request, not a loan
                   application, and it will be read personally.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--cap-muted)]">
-                  You will get a receipt from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Then expect
-                  an email from your assigned coordinator at {CONTACT_EMAIL} within {RESPONSE_HOURS}{' '}
-                  hours. Check spam. Reply on that thread so your file stays together.
+                  You will get a receipt from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Within{' '}
+                  {RESPONSE_HOURS} hours, {COORDINATOR_NAME} ({COORDINATOR_EMAIL}) will write you —
+                  reply on that thread so your file stays together. Check spam. For general help or
+                  to verify a message, use {CONTACT_EMAIL}.
                 </p>
                 <p className="mt-4 text-sm font-medium text-[var(--cap-blue)]">
                   You did the hard part by asking. Rest tonight. We will take the next step. CAP
@@ -315,7 +318,7 @@ export default function ApplyPage() {
               </p>
               <p className="flex gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--cap-accent)]" />
-                Coordinator assigned · {CONTACT_EMAIL}
+                Coordinator · {COORDINATOR_EMAIL}
               </p>
               <p className="flex gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--cap-accent)]" />
