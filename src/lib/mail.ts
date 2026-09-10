@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { APPLY_FROM_NAME, CONTACT_EMAIL } from '@/lib/site';
+import { APPLY_FROM_NAME, CONTACT_EMAIL, COORDINATOR_EMAIL } from '@/lib/site';
 
 export function getSmtpCredentials() {
   const user = process.env.ZOHO_USER?.trim();
@@ -19,8 +19,19 @@ export function createMailTransporter() {
   });
 }
 
+/** Inbox for new applications, affidavits, and verification forms (coordinator). */
+export function getApplyInbox() {
+  return process.env.TO_EMAIL?.trim() || COORDINATOR_EMAIL;
+}
+
+/** @deprecated Use getApplyInbox — kept for older call sites */
 export function getOperatorInbox() {
-  return process.env.TO_EMAIL?.trim() || process.env.ZOHO_USER?.trim() || '';
+  return getApplyInbox();
+}
+
+/** Public support / verify desk */
+export function getSupportInbox() {
+  return process.env.SUPPORT_TO_EMAIL?.trim() || CONTACT_EMAIL;
 }
 
 export function mailFromAutomated() {

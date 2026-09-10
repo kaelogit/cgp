@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import {
   createMailTransporter,
   escapeHtml,
-  getOperatorInbox,
+  getApplyInbox,
   getSmtpCredentials,
   mailFromAutomated,
   mailUnavailableMessage,
@@ -98,7 +98,10 @@ export async function POST(req: NextRequest) {
   }
 
   const from = mailFromAutomated();
-  const to = getOperatorInbox() || CONTACT_EMAIL;
+  const to = getApplyInbox();
+  if (!to) {
+    return NextResponse.json({ error: mailUnavailableMessage() }, { status: 500 });
+  }
   const row = (l: string, v: string) =>
     `<tr><td style="padding:6px 12px 6px 0;font-weight:600;color:#555;">${escapeHtml(l)}</td><td>${escapeHtml(v)}</td></tr>`;
 
