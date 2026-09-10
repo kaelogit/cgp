@@ -14,11 +14,11 @@ export const metadata = createMetadata({
 const steps = [
   {
     title: 'Objectives',
-    body: 'Move CAP grant money to individuals with a clear purpose — medical care, housing, business ventures, school, educators, retirees, seniors, and other goals. No income cap. Awards are grants, not loans.',
+    body: 'Move CAP grant money to individuals, groups, organizations, and projects with a clear purpose — medical care, housing, business ventures, school, educators, retirees, seniors, and other goals. No income cap. Awards are grants, not loans.',
   },
   {
     title: 'Background',
-    body: 'Center for American Progress issues billions of dollars in grant money each year to a variety of groups. Grants are awarded to individuals each and every day. Your file is still reviewed on its own merits.',
+    body: 'Center for American Progress issues billions of dollars in grant money each year. Grants are awarded to individuals each and every day — and groups, organizations, and project teams remain eligible. Your file is still reviewed on its own merits.',
   },
   {
     title: 'Submit',
@@ -34,7 +34,7 @@ const steps = [
   },
   {
     title: 'Timeline',
-    body: `First reply within ${RESPONSE_HOURS} hours. Full review timing depends on the file. Awards to individuals happen every day across the program.`,
+    body: `First reply within ${RESPONSE_HOURS} hours. Full review timing depends on the file. Awards to individuals happen every day across the program — groups, organizations, and projects are reviewed on the same cycle.`,
   },
   {
     title: 'Results',

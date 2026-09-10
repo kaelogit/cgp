@@ -90,7 +90,8 @@ export default function ApplyPage() {
           <h1 className="mt-3 text-4xl text-white">Your CAP grant application</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
             Center for American Progress issues billions of dollars in CAP grant money each year.
-            Awards go to individuals every day. CAP programs are not loans. {HELP_AREAS_SHORT}
+            Awards go to individuals every day — and groups, organizations, and projects are
+            eligible too. CAP programs are not loans. {HELP_AREAS_SHORT}
           </p>
           <p className="mt-3 text-sm text-white/70">{applicantResponseBadge()}</p>
         </div>

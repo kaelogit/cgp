@@ -1,6 +1,8 @@
+import { CYCLE_YEAR, GRANTS_TOTAL, MAX_AWARD } from '@/lib/site';
+
 const items = [
-  'CAP Grants · nearly $60 million in new resources',
-  'CAP 2026 · funding up to $1,000,000 per project',
+  `CAP Grants · ${GRANTS_TOTAL.toLowerCase()} in new resources`,
+  `CAP ${CYCLE_YEAR} · funding ${MAX_AWARD.toLowerCase()} for individuals, groups, orgs & projects`,
   'Grants — not loans',
   'Coordinator assigned within 24 hours',
   'Open nationwide · adults 18+',

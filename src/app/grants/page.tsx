@@ -10,19 +10,19 @@ import {
 } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: `CAP Grants ${CYCLE_YEAR} — Up to $1M Per Project`,
-  description: `CAP Grants has provided ${GRANTS_TOTAL.toLowerCase()} in new resources. CAP ${CYCLE_YEAR} funds projects of ${MAX_AWARD.toLowerCase()}. Grants — not loans.`,
+  title: `CAP Grants ${CYCLE_YEAR} — ${MAX_AWARD} for Individuals & Projects`,
+  description: `CAP Grants has provided ${GRANTS_TOTAL.toLowerCase()} in new resources. CAP ${CYCLE_YEAR} funds individuals, groups, organizations, and projects ${MAX_AWARD.toLowerCase()}. Grants — not loans.`,
   path: '/grants',
 });
 
 const highlights = [
   {
-    title: 'Nearly $60 million',
-    text: 'CAP Grants has already put major new resources into people and projects across the country.',
+    title: GRANTS_TOTAL,
+    text: 'CAP Grants has already put major new resources into individuals, groups, organizations, and projects across the country.',
   },
   {
-    title: `Up to $1 million`,
-    text: `CAP ${CYCLE_YEAR} provides funding of up to USD 1 million per project for approved applications.`,
+    title: MAX_AWARD,
+    text: `CAP ${CYCLE_YEAR} provides funding of ${MAX_AWARD.toLowerCase()} for approved applications — whether you apply as an individual or for a group, organization, or project.`,
   },
   {
     title: 'Grants, not loans',
@@ -46,9 +46,9 @@ export default function GrantsPage() {
             opportunity forward
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80">
-            The CAP Grants program has provided nearly $60 million in new resources. CAP {CYCLE_YEAR}{' '}
-            provides funding of up to USD 1 million per project — for individuals, groups, and
-            initiatives advancing prosperity.
+            The CAP Grants program has provided {GRANTS_TOTAL.toLowerCase()} in new resources. CAP{' '}
+            {CYCLE_YEAR} provides funding of {MAX_AWARD.toLowerCase()} — for individuals, groups,
+            organizations, and projects advancing progress.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/apply" className="btn-primary">

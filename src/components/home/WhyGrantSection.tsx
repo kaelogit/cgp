@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { CYCLE_YEAR, FULL_NAME, SHORT_NAME } from '@/lib/site';
+import { CYCLE_YEAR, FULL_NAME, MAX_AWARD, SHORT_NAME } from '@/lib/site';
 
 const pillars = [
   {
@@ -13,7 +13,7 @@ const pillars = [
   },
   {
     title: 'Direct grants',
-    text: `CAP Grants ${CYCLE_YEAR} funds people and projects — up to $1 million per award.`,
+    text: `CAP Grants ${CYCLE_YEAR} funds individuals, groups, organizations, and projects — ${MAX_AWARD.toLowerCase()} per award.`,
   },
 ];
 
@@ -29,8 +29,8 @@ export function WhyGrantSection() {
           <div className="accent-bar mt-5" />
           <p className="mt-6 text-base leading-relaxed text-[var(--cap-muted)] md:text-lg">
             {FULL_NAME} is a national organization. CAP Grants is one of our most direct ways to
-            put resources into the hands of people and projects — but it sits alongside research,
-            policy, and community work.
+            put resources into the hands of individuals, groups, organizations, and projects — but
+            it sits alongside research, policy, and community work.
           </p>
         </div>
         <div className="mt-14 grid gap-0 border border-[var(--cap-line)] md:grid-cols-3">

@@ -18,8 +18,9 @@ export function ApplyCtaSection() {
             Grants file
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-white/80">
-            CAP {CYCLE_YEAR} provides funding of {MAX_AWARD.toLowerCase()} per project. Awards are
-            grants — not loans. Complete applications are reviewed every cycle.
+            CAP {CYCLE_YEAR} provides funding of {MAX_AWARD.toLowerCase()} for individuals, groups,
+            organizations, and projects. Awards are grants — not loans. Complete applications are
+            reviewed every cycle.
           </p>
         </div>
         <div className="lg:pl-10">

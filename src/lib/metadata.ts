@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import {
   absoluteSiteUrl,
+  CYCLE_YEAR,
+  GRANTS_TOTAL,
   LOGO_PATH,
   LOGO_URL,
+  MAX_AWARD,
   PROGRAM_NAME,
   SHORT_NAME,
   SITE_URL,
 } from '@/lib/site';
 
 export const DEFAULT_TITLE = 'CAP — Center for American Progress | CAP Grants';
-export const DEFAULT_DESCRIPTION =
-  'Official Center for American Progress site. CAP Grants has provided nearly $60 million in new resources. CAP 2026 funds projects up to $1 million. Grants — not loans.';
+export const DEFAULT_DESCRIPTION = `Official Center for American Progress site. CAP Grants has provided ${GRANTS_TOTAL.toLowerCase()} in new resources. CAP ${CYCLE_YEAR} funds individuals, groups, organizations, and projects ${MAX_AWARD.toLowerCase()}. Grants — not loans.`;
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');

@@ -6,11 +6,11 @@ import {
   CYCLE_YEAR,
   ELIGIBILITY_OPEN,
   FULL_NAME,
+  FUNDING_MIX_2025,
   GRANTS_TOTAL,
   HELP_AREAS_SHORT,
   MAX_AWARD,
   RESPONSE_HOURS,
-  SHORT_NAME,
   SITE_DOMAIN,
 } from '@/lib/site';
 
@@ -22,7 +22,7 @@ export const faqItems = [
   },
   {
     question: 'Who can apply?',
-    answer: `${ELIGIBILITY_OPEN} ${HELP_AREAS_SHORT}`,
+    answer: `${ELIGIBILITY_OPEN} Adults 18+ may apply for themselves. Groups, organizations, and project teams may apply for collective work. ${HELP_AREAS_SHORT}`,
   },
   {
     question: 'Do I need to be low income or in financial crisis?',
@@ -31,18 +31,18 @@ export const faqItems = [
   },
   {
     question: `What is CAP Grants ${CYCLE_YEAR}?`,
-    answer: `CAP Grants has provided ${GRANTS_TOTAL.toLowerCase()} in new resources. Under CAP ${CYCLE_YEAR}, funding of ${MAX_AWARD.toLowerCase()} per project is available for approved applications. Awards are grants — not loans.`,
+    answer: `CAP Grants has provided ${GRANTS_TOTAL.toLowerCase()} in new resources. Under CAP ${CYCLE_YEAR}, funding of ${MAX_AWARD.toLowerCase()} is available for approved applications from individuals, groups, organizations, and projects. Awards are grants — not loans.`,
   },
   {
     question: 'Is CAP only a grant program?',
-    answer: `${FULL_NAME} does more than grants. CAP advances opportunity through research, policy, community programs, and direct grant support. CAP Grants is the direct-funding track for people and projects.`,
+    answer: `${FULL_NAME} does more than grants. CAP advances opportunity through research, policy, community programs, and direct grant support. CAP Grants is the direct-funding track for individuals, groups, organizations, and projects. ${FUNDING_MIX_2025}`,
   },
   {
     question: 'How much can I receive?',
-    answer: `CAP ${CYCLE_YEAR} provides funding of up to USD 1 million per project. Actual award amounts depend on the file, the request, and available resources. Not every application is funded.`,
+    answer: `CAP ${CYCLE_YEAR} provides funding of ${MAX_AWARD.toLowerCase()}. Actual award amounts depend on the file, the request, and available resources. Not every application is funded.`,
   },
   {
-    question: 'What ca CAP Grants fund?',
+    question: 'What can CAP Grants fund?',
     answer: `Community projects, small business growth, education and skills, housing stability, medical costs, civic engagement, seniors support, and general grants when your goal spans categories.`,
   },
   {

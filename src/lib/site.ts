@@ -71,14 +71,18 @@ export function absoluteSiteUrl(path = ''): string {
 }
 
 export const ORG_BLURB =
-  'Center for American Progress (CAP) advances opportunity through research, policy, community programs, and direct grant support. CAP Grants has provided nearly $60 million in new resources — with CAP 2026 funding of up to $1 million per project.';
+  'Center for American Progress (CAP) advances opportunity through research, policy, community programs, and direct grant support. CAP Grants has provided over $2.5 billion in new resources — with CAP 2026 funding of up to $2.5 million for individuals, groups, organizations, and projects.';
 
 export const ELIGIBILITY_OPEN =
-  'Open to adults 18 and older across the United States. There is no income cap, no means test, and no requirement that you be in financial crisis.';
+  'Open to adults 18 and older across the United States — individuals may apply for themselves, and groups, organizations, and project teams may apply for collective work. There is no income cap, no means test, and no requirement that you be in financial crisis.';
 
 export const HELP_AREAS_SHORT =
-  'Community projects, small business growth, education, housing stability, medical costs, and civic initiatives.';
+  'Community projects, small business growth, education, housing stability, medical costs, and civic initiatives — for individuals, groups, organizations, and projects.';
 
-export const GRANTS_TOTAL = 'Nearly $60 million';
-export const MAX_AWARD = 'Up to $1,000,000';
+export const GRANTS_TOTAL = 'Over $2.5 billion';
+export const MAX_AWARD = 'Up to $2,500,000';
 export const CYCLE_YEAR = '2026';
+
+/** 2025 charitable contribution mix (organizational transparency) */
+export const FUNDING_MIX_2025 =
+  'In 2025, the Center for American Progress received 95.7 percent of its charitable contributions from individuals and foundations, 2.1 percent from labor unions, and less than 2.2 percent from corporations. Foreign government funding comprised 0.2 percent of these categories.';

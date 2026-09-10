@@ -26,7 +26,11 @@ export default function EligibilityPage() {
             {ELIGIBILITY_OPEN} You may apply for yourself. Each person submits their own
             application. {HELP_AREAS_SHORT}
           </p>
-          <h2 className="text-2xl text-[var(--cap-accent)]">Groups CAP reviews every day</h2>
+          <h2 className="text-2xl text-[var(--cap-accent)]">Who CAP reviews every day</h2>
+          <p>
+            Adults 18+ may apply for themselves. Groups, organizations, and project teams may apply
+            for collective work. Categories below show common paths — not closed doors.
+          </p>
           <ul className="space-y-4">
             {GRANT_PROGRAMS.map((p) => (
               <li key={p.slug} className="border-t border-[var(--cap-line)] pt-4">

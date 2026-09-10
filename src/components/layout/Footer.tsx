@@ -4,6 +4,7 @@ import {
   CONTACT_EMAIL,
   CYCLE_YEAR,
   FULL_NAME,
+  MAX_AWARD,
   SHORT_NAME,
   SITE_DOMAIN,
 } from '@/lib/site';
@@ -48,7 +49,8 @@ export function Footer() {
           <Logo light compact />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/75">
             {FULL_NAME} advances opportunity through research, policy, community programs, and
-            direct grant support. CAP Grants {CYCLE_YEAR} funds projects of up to $1 million.
+            direct grant support. CAP Grants {CYCLE_YEAR} funds individuals, groups, organizations,
+            and projects — {MAX_AWARD.toLowerCase()}.
           </p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}

@@ -2,7 +2,7 @@ import { CYCLE_YEAR, GRANTS_TOTAL, MAX_AWARD } from '@/lib/site';
 
 const stats = [
   { value: GRANTS_TOTAL, label: 'In CAP Grants resources' },
-  { value: MAX_AWARD, label: `Per project · CAP ${CYCLE_YEAR}` },
+  { value: MAX_AWARD, label: `Individuals, groups & projects · CAP ${CYCLE_YEAR}` },
   { value: '50 states', label: 'Eligibility nationwide' },
   { value: 'Grants', label: 'Not loans — no repayment' },
 ];

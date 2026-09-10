@@ -34,7 +34,7 @@ export function organizationJsonLd() {
     image: LOGO_URL,
     email: CONTACT_EMAIL,
     description:
-      'World bank group issuing CAP grants to individuals. Awards are grants, not loans.',
+      'Center for American Progress issues CAP grants to individuals, groups, organizations, and projects. Awards are grants, not loans.',
     contactPoint: [
       {
         '@type': 'ContactPoint',

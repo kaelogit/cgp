@@ -26,7 +26,7 @@ export function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(115deg, rgba(11,36,102,0.96) 0%, rgba(11,36,102,0.82) 48%, rgba(250,100,87,0.45) 100%)',
+            'linear-gradient(115deg, rgba(8,28,78,0.96) 0%, rgba(11,36,102,0.84) 48%, rgba(250,100,87,0.42) 100%)',
         }}
       />
       <div className="container-wide relative grid min-h-[88vh] items-end gap-10 py-20 lg:grid-cols-[1.35fr_0.9fr] lg:items-center lg:py-28">
@@ -35,7 +35,7 @@ export function HeroSection() {
             {SHORT_NAME} · {FULL_NAME}
           </p>
           <h1 className="headline-xl mt-5 max-w-3xl text-white">
-            Prosperity built
+            Progress built
             <br />
             for people.
           </h1>
@@ -52,7 +52,7 @@ export function HeroSection() {
             </Link>
           </div>
         </div>
-        <aside className="border border-white/20 bg-[var(--cap-black)]/35 p-7 backdrop-blur-sm lg:p-8">
+        <aside className="border-l-4 border-[var(--cap-gold)] bg-[var(--cap-black)]/40 p-7 backdrop-blur-sm lg:p-8">
           <p className="font-display text-sm tracking-[0.18em] text-[var(--cap-gold)]">
             CAP Grants {CYCLE_YEAR}
           </p>
@@ -64,12 +64,14 @@ export function HeroSection() {
             <div className="h-px bg-white/20" />
             <div>
               <p className="font-display text-4xl text-[var(--cap-red)] md:text-5xl">{MAX_AWARD}</p>
-              <p className="mt-1 text-sm text-white/70">per project under CAP {CYCLE_YEAR}</p>
+              <p className="mt-1 text-sm text-white/70">
+                for individuals, groups, orgs & projects under CAP {CYCLE_YEAR}
+              </p>
             </div>
             <div className="h-px bg-white/20" />
             <p className="text-sm leading-relaxed text-white/75">
-              Grants — not loans. Awards support individuals, groups, and projects advancing
-              opportunity across the United States.
+              Grants — not loans. Awards support individuals, groups, organizations, and projects
+              advancing opportunity across the United States.
             </p>
           </div>
         </aside>

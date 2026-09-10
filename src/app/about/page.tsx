@@ -5,7 +5,9 @@ import { createMetadata } from '@/lib/metadata';
 import {
   CYCLE_YEAR,
   FULL_NAME,
+  FUNDING_MIX_2025,
   GRANTS_TOTAL,
+  MAX_AWARD,
   ORG_BLURB,
   SHORT_NAME,
 } from '@/lib/site';
@@ -48,8 +50,9 @@ export default function AboutPage() {
             <div className="accent-bar mt-5" />
             <p className="mt-6 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
               {FULL_NAME} works at the intersection of ideas and action. We publish research, shape
-              policy conversations, support community programs, and fund people and projects through
-              CAP Grants — because prosperity is more than a headline.
+              policy conversations, support community programs, and fund individuals, groups,
+              organizations, and projects through CAP Grants — because progress is more than a
+              headline.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -82,8 +85,9 @@ export default function AboutPage() {
           <div className="accent-bar mt-5" />
           <p className="mt-6 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
             CAP Grants is not the only thing we do — but it is one of the most concrete. The program
-            has provided nearly $60 million in new resources. CAP {CYCLE_YEAR} provides funding of up
-            to USD 1 million per project. Awards are grants, not loans.
+            has provided {GRANTS_TOTAL.toLowerCase()} in new resources. CAP {CYCLE_YEAR} provides
+            funding of {MAX_AWARD.toLowerCase()} for individuals, groups, organizations, and
+            projects. Awards are grants, not loans.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/grants" className="btn-primary">
@@ -94,6 +98,23 @@ export default function AboutPage() {
               Apply
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-[var(--cap-line)] bg-white py-16 md:py-24">
+        <div className="container-wide max-w-3xl">
+          <p className="section-label">Support & independence</p>
+          <h2 className="headline-lg mt-4 text-[var(--cap-blue)]">
+            Who funds CAP
+          </h2>
+          <div className="gold-bar mt-5" />
+          <p className="mt-6 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
+            {FUNDING_MIX_2025}
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
+            That mix reflects organizational support for {FULL_NAME} — separate from how CAP Grants
+            awards are reviewed for individuals, groups, organizations, and projects.
+          </p>
         </div>
       </section>
     </div>

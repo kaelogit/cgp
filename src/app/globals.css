@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import 'tailwindcss';
 
 :root {
-  --cap-blue: #0b2466;
-  --cap-blue-deep: #071a4a;
-  --cap-red: #fa6457;
-  --cap-gold: #ffc72e;
-  --cap-accent: #0050ec;
-  --cap-teal: #09d2ae;
-  --cap-black: #151515;
+  --cap-blue: #081c4e;
+  --cap-blue-deep: #051236;
+  --cap-red: #e85a4f;
+  --cap-gold: #f5c518;
+  --cap-accent: #0047c7;
+  --cap-teal: #00b89c;
+  --cap-black: #121212;
   --cap-white: #ffffff;
-  --cap-paper: #f4f5f8;
-  --cap-ink: #151515;
-  --cap-muted: #5c6578;
-  --cap-line: #dde1ea;
+  --cap-paper: #f6f7fa;
+  --cap-ink: #121212;
+  --cap-muted: #5a6478;
+  --cap-line: #e2e5ee;
 }
 
 @theme {
   --font-display: 'Bebas Neue', 'Arial Narrow', Impact, sans-serif;
-  --font-sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --color-cap-blue: #0b2466;
-  --color-cap-red: #fa6457;
-  --color-cap-gold: #ffc72e;
-  --color-cap-accent: #0050ec;
-  --color-cap-teal: #09d2ae;
-  --color-cap-black: #151515;
+  --font-sans: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --color-cap-blue: #081c4e;
+  --color-cap-red: #e85a4f;
+  --color-cap-gold: #f5c518;
+  --color-cap-accent: #0047c7;
+  --color-cap-teal: #00b89c;
+  --color-cap-black: #121212;
 }
 
 @layer base {
@@ -91,7 +91,7 @@
     background: var(--cap-red);
   }
   .btn-primary:hover {
-    background: #e85548;
+    background: #d14c42;
   }
   .btn-navy {
     @apply inline-flex items-center justify-center gap-2 rounded-none px-6 py-3.5 text-sm font-semibold text-white transition-colors;

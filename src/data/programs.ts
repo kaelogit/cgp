@@ -12,7 +12,7 @@ export const CAP_PROGRAMS: CapProgram[] = [
     slug: 'community',
     title: 'Community projects',
     summary: 'Neighborhood and civic initiatives that strengthen local opportunity.',
-    who: 'Community groups, nonprofit partners, and individuals leading local projects.',
+    who: 'Individuals, community groups, nonprofit partners, and teams leading local projects.',
     details:
       'CAP supports community-led work — from neighborhood revitalization to public-space improvements and local service programs. Describe the project, who benefits, and how a CAP grant would be used. Awards are grants, not loans.',
     accent: 'red',
@@ -57,9 +57,9 @@ export const CAP_PROGRAMS: CapProgram[] = [
     slug: 'civic',
     title: 'Civic & policy engagement',
     summary: 'Projects that expand participation and informed public life.',
-    who: 'Organizers, educators, and teams building civic capacity.',
+    who: 'Individuals, organizers, educators, and teams building civic capacity.',
     details:
-      'CAP funds civic education, voter engagement infrastructure, and public-interest projects aligned with opportunity and prosperity. Outline goals, audience, and measurable outcomes.',
+      'CAP funds civic education, voter engagement infrastructure, and public-interest projects aligned with opportunity and progress. Outline goals, audience, and measurable outcomes.',
     accent: 'accent',
   },
   {
