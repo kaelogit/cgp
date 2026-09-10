@@ -46,7 +46,7 @@ export function Footer() {
     <footer className="bg-[var(--cap-blue)] text-white">
       <div className="container-wide grid gap-12 py-16 md:grid-cols-[1.4fr_2fr]">
         <div>
-          <Logo light compact />
+          <Logo light />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/75">
             {FULL_NAME} advances opportunity through research, policy, community programs, and
             direct grant support. CAP Grants {CYCLE_YEAR} funds individuals, groups, organizations,

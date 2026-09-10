@@ -7,24 +7,24 @@ type Props = {
 };
 
 export function Logo({ compact = false, light = false }: Props) {
-  const mark = light ? 'text-white' : 'text-[var(--cap-blue)]';
   const sub = light ? 'text-white/70' : 'text-[var(--cap-muted)]';
+  const markBg = light ? 'bg-white' : 'bg-[var(--cap-blue)]';
+  const markText = light ? 'text-[var(--cap-blue)]' : 'text-white';
 
   return (
-    <Link href="/" className="inline-flex items-center gap-3 no-underline" aria-label={`${SHORT_NAME} home`}>
+    <Link
+      href="/"
+      className="inline-flex items-center gap-3 no-underline"
+      aria-label={`${SHORT_NAME} home`}
+    >
       <span
-        className={`font-display inline-flex h-11 min-w-11 items-center justify-center bg-[var(--cap-blue)] px-2.5 text-[1.35rem] leading-none text-white ${
-          light ? 'bg-white text-[var(--cap-blue)]' : ''
-        }`}
+        className={`font-display inline-flex h-11 w-11 shrink-0 items-center justify-center px-0.5 text-[1.85rem] leading-none tracking-[0.02em] ${markBg} ${markText}`}
       >
         {SHORT_NAME}
       </span>
       {!compact ? (
-        <span className="hidden min-[420px]:flex flex-col leading-tight">
-          <span className={`font-display text-[1.05rem] tracking-[0.04em] ${mark}`}>{SHORT_NAME}</span>
-          <span className={`text-[10px] font-semibold tracking-[0.08em] uppercase ${sub}`}>
-            {FULL_NAME}
-          </span>
+        <span className={`hidden min-[420px]:block text-[11px] font-semibold leading-snug tracking-[0.06em] uppercase ${sub}`}>
+          {FULL_NAME}
         </span>
       ) : null}
     </Link>
