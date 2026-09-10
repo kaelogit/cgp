@@ -18,12 +18,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
-        <link rel="icon" href="/favicon.ico?v=cap2" sizes="any" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=cap2" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=cap2" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=cap2" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png?v=cap2" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=cap2" />
+        <link rel="icon" href="/favicon.ico?v=cap3" sizes="any" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=cap3" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=cap3" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=cap3" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png?v=cap3" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=cap3" />
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
       </head>

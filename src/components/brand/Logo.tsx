@@ -1,32 +1,41 @@
 import Link from 'next/link';
-import { SHORT_NAME, FULL_NAME } from '@/lib/site';
+import Image from 'next/image';
+import { FULL_NAME, LOGO_PATH, SHORT_NAME } from '@/lib/site';
 
 type Props = {
   compact?: boolean;
   light?: boolean;
+  className?: string;
 };
 
-export function Logo({ compact = false, light = false }: Props) {
+/** CAP mark + org wordmark with Grant Program subtitle (IDA-style). */
+export function Logo({ compact = false, light = false, className = '' }: Props) {
+  const word = light ? 'text-white' : 'text-[var(--cap-blue)]';
   const sub = light ? 'text-white/70' : 'text-[var(--cap-muted)]';
-  const markBg = light ? 'bg-white' : 'bg-[var(--cap-blue)]';
-  const markText = light ? 'text-[var(--cap-blue)]' : 'text-white';
 
   return (
     <Link
       href="/"
-      className="inline-flex items-center gap-3 no-underline"
+      className={`inline-flex min-w-0 items-center gap-2.5 no-underline sm:gap-3 ${className}`}
       aria-label={`${SHORT_NAME} home`}
     >
-      <span
-        className={`font-display inline-flex h-11 w-11 shrink-0 items-center justify-center px-0.5 text-[1.85rem] leading-none tracking-[0.02em] ${markBg} ${markText}`}
-      >
-        {SHORT_NAME}
-      </span>
-      {!compact ? (
-        <span className={`hidden min-[420px]:block text-[11px] font-semibold leading-snug tracking-[0.06em] uppercase ${sub}`}>
+      <Image
+        src={LOGO_PATH}
+        alt={FULL_NAME}
+        width={44}
+        height={44}
+        className="h-11 w-11 shrink-0 object-cover"
+        unoptimized
+        priority
+      />
+      <span className="flex min-w-0 flex-col leading-tight">
+        <span
+          className={`${compact ? 'text-[12px] sm:text-[13px] xl:text-[15px]' : 'text-[13px] sm:text-[15px]'} font-semibold tracking-tight ${word}`}
+        >
           {FULL_NAME}
         </span>
-      ) : null}
+        <span className={`text-[11px] font-medium tracking-wide ${sub}`}>Grant Program</span>
+      </span>
     </Link>
   );
 }

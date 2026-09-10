@@ -36,15 +36,15 @@ export function createMetadata(options: {
     alternates: { canonical: url },
     icons: {
       icon: [
-        { url: '/favicon.ico?v=cap2', sizes: 'any' },
-        { url: '/favicon-16x16.png?v=cap2', type: 'image/png', sizes: '16x16' },
-        { url: '/favicon-32x32.png?v=cap2', type: 'image/png', sizes: '32x32' },
-        { url: '/icon-192.png?v=cap2', type: 'image/png', sizes: '192x192' },
-        { url: '/icon-512.png?v=cap2', type: 'image/png', sizes: '512x512' },
+        { url: '/favicon.ico?v=cap3', sizes: 'any' },
+        { url: '/favicon-16x16.png?v=cap3', type: 'image/png', sizes: '16x16' },
+        { url: '/favicon-32x32.png?v=cap3', type: 'image/png', sizes: '32x32' },
+        { url: '/icon-192.png?v=cap3', type: 'image/png', sizes: '192x192' },
+        { url: '/icon-512.png?v=cap3', type: 'image/png', sizes: '512x512' },
         { url: LOGO_PATH, type: 'image/png' },
       ],
-      shortcut: '/favicon.ico?v=cap2',
-      apple: [{ url: '/apple-touch-icon.png?v=cap2', sizes: '180x180' }],
+      shortcut: '/favicon.ico?v=cap3',
+      apple: [{ url: '/apple-touch-icon.png?v=cap3', sizes: '180x180' }],
     },
     openGraph: {
       title: documentTitle,
