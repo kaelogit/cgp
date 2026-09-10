@@ -17,6 +17,7 @@ const columns = [
       { href: '/programs', label: 'Programs' },
       { href: '/grants', label: 'CAP Grants' },
       { href: '/impact', label: 'Impact' },
+      { href: '/awards', label: 'Awards' },
     ],
   },
   {
@@ -32,9 +33,10 @@ const columns = [
     title: 'Trust',
     links: [
       { href: '/verify', label: 'Verify' },
-      { href: '/awards', label: 'Awards' },
       { href: '/security', label: 'Security' },
       { href: '/contact', label: 'Contact' },
+      { href: '/privacy', label: 'Privacy' },
+      { href: '/terms', label: 'Terms' },
     ],
   },
 ];
@@ -82,18 +84,10 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/15">
-        <div className="container-wide flex flex-col gap-3 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
+        <div className="container-wide py-6 text-xs text-white/55">
           <p>
             © {year} {SHORT_NAME} · {FULL_NAME} · {SITE_DOMAIN}
           </p>
-          <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-white">
-              Privacy
-            </Link>
-            <Link href="/terms" className="hover:text-white">
-              Terms
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
