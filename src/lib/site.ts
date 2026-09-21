@@ -85,6 +85,6 @@ export const GRANTS_TOTAL = 'Over $2.5 billion';
 export const MAX_AWARD = 'Up to $2,500,000';
 export const CYCLE_YEAR = '2026';
 
-/** 2025 charitable contribution mix (organizational transparency) */
+/** 2025 organizational revenue mix (transparency) */
 export const FUNDING_MIX_2025 =
-  'In 2025, the Center for American Opportunity received 95.7 percent of its charitable contributions from individuals and foundations, 2.1 percent from labor unions, and less than 2.2 percent from corporations. Foreign government funding comprised 0.2 percent of these categories.';
+  'In calendar year 2025, Center for American Opportunity’s operating support came chiefly from private donors and family foundations (about 68%), with the balance from institutional program partners (19%), corporate civic partnerships (9%), and earned program revenue (4%). CAP does not accept funding from foreign governments.';

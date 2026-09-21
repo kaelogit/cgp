@@ -105,15 +105,16 @@ export default function AboutPage() {
         <div className="container-wide max-w-3xl">
           <p className="section-label">Support & independence</p>
           <h2 className="headline-lg mt-4 text-[var(--cap-blue)]">
-            Who funds CAP
+            How CAP is supported
           </h2>
           <div className="gold-bar mt-5" />
           <p className="mt-6 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
             {FUNDING_MIX_2025}
           </p>
           <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
-            That mix reflects organizational support for {FULL_NAME} — separate from how CAP Grants
-            awards are reviewed for individuals, groups, organizations, and projects.
+            Organizational support for {FULL_NAME} is separate from CAP Grants review. Award
+            decisions for individuals, groups, organizations, and projects follow program criteria —
+            not donor preferences.
           </p>
         </div>
       </section>
