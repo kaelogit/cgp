@@ -30,7 +30,7 @@ export function HeroSection() {
       <div className="container-wide relative grid min-h-[78vh] items-end gap-8 py-14 sm:min-h-[88vh] sm:gap-10 sm:py-20 lg:grid-cols-[1.35fr_0.9fr] lg:items-center lg:py-28">
         <div>
           <h1 className="headline-xl max-w-3xl text-white">
-            Progress built
+            Opportunity built
             <br />
             for people.
           </h1>

@@ -5,7 +5,7 @@ import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, SHORT_NAME
 export const metadata = createMetadata({
   title: 'CAP Privacy Policy — How We Handle Applications',
   description:
-    'How Center for American Progress uses the information you submit on capgrantprogram.com. Official support is by email. We never ask for passwords.',
+    'How Center for American Opportunity uses the information you submit on capgrantprogram.com. Official support is by email. We never ask for passwords.',
   path: '/privacy',
 });
 

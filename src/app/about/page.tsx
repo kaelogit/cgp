@@ -13,7 +13,7 @@ import {
 } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: `About ${SHORT_NAME} — Center for American Progress`,
+  title: `About ${SHORT_NAME} — Center for American Opportunity`,
   description: ORG_BLURB,
   path: '/about',
 });
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <h1 className="headline-lg mt-4 text-white">
             Center for
             <br />
-            American Progress
+            American Opportunity
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80">{ORG_BLURB}</p>
         </div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <p className="mt-6 text-sm leading-relaxed text-[var(--cap-muted)] md:text-base">
               {FULL_NAME} works at the intersection of ideas and action. We publish research, shape
               policy conversations, support community programs, and fund individuals, groups,
-              organizations, and projects through CAP Grants — because progress is more than a
+              organizations, and projects through CAP Grants — because opportunity is more than a
               headline.
             </p>
           </div>

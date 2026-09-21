@@ -18,7 +18,7 @@ const steps = [
   },
   {
     title: 'Background',
-    body: 'Center for American Progress issues billions of dollars in grant money each year. Grants are awarded to individuals each and every day — and groups, organizations, and project teams remain eligible. Your file is still reviewed on its own merits.',
+    body: 'Center for American Opportunity issues billions of dollars in grant money each year. Grants are awarded to individuals each and every day — and groups, organizations, and project teams remain eligible. Your file is still reviewed on its own merits.',
   },
   {
     title: 'Submit',

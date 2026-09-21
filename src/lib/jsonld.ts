@@ -28,13 +28,13 @@ export function organizationJsonLd() {
     logo: {
       '@type': 'ImageObject',
       url: LOGO_URL,
-      width: 1295,
-      height: 1215,
+      width: 807,
+      height: 716,
     },
     image: LOGO_URL,
     email: CONTACT_EMAIL,
     description:
-      'Center for American Progress issues CAP grants to individuals, groups, organizations, and projects. Awards are grants, not loans.',
+      'Center for American Opportunity issues CAP grants to individuals, groups, organizations, and projects. Awards are grants, not loans.',
     contactPoint: [
       {
         '@type': 'ContactPoint',

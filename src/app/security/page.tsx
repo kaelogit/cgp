@@ -23,7 +23,7 @@ export default function SecurityPage() {
           <p className="section-label">Security</p>
           <h1 className="mt-3 text-4xl">Trust, privacy, and how to verify us</h1>
           <p className="mt-4 text-sm leading-relaxed text-[var(--cap-muted)]">
-            Center for American Progress protects every applicant — and helps people confirm
+            Center for American Opportunity protects every applicant — and helps people confirm
             whether a grant message is really from us.
           </p>
         </div>

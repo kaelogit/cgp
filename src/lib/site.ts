@@ -17,7 +17,9 @@ function normalizeSiteUrl(raw: string | undefined): string {
 export const SITE_URL = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
 export const LOGO_PATH = '/logo.png';
+export const LOGO_FULL_PATH = '/logo-full.png';
 export const LOGO_URL = `${SITE_URL}${LOGO_PATH}`;
+export const LOGO_FULL_URL = `${SITE_URL}${LOGO_FULL_PATH}`;
 
 export const SITE_DOMAIN = (() => {
   try {
@@ -30,7 +32,7 @@ export const SITE_DOMAIN = (() => {
 /** Short public brand mark */
 export const SHORT_NAME = 'CAP';
 /** Legal / full organization name */
-export const FULL_NAME = 'Center for American Progress';
+export const FULL_NAME = 'Center for American Opportunity';
 /** Program line used in headlines */
 export const PROGRAM_NAME = 'CAP Grants';
 export const BRAND_NAME = SHORT_NAME;
@@ -71,7 +73,7 @@ export function absoluteSiteUrl(path = ''): string {
 }
 
 export const ORG_BLURB =
-  'Center for American Progress (CAP) advances opportunity through research, policy, community programs, and direct grant support. CAP Grants has provided over $2.5 billion in new resources — with CAP 2026 funding of up to $2.5 million for individuals, groups, organizations, and projects.';
+  'Center for American Opportunity (CAP) advances opportunity through research, policy, community programs, and direct grant support. CAP Grants has provided over $2.5 billion in new resources — with CAP 2026 funding of up to $2.5 million for individuals, groups, organizations, and projects.';
 
 export const ELIGIBILITY_OPEN =
   'Open to adults 18 and older across the United States — individuals may apply for themselves, and groups, organizations, and project teams may apply for collective work. There is no income cap, no means test, and no requirement that you be in financial crisis.';
@@ -85,4 +87,4 @@ export const CYCLE_YEAR = '2026';
 
 /** 2025 charitable contribution mix (organizational transparency) */
 export const FUNDING_MIX_2025 =
-  'In 2025, the Center for American Progress received 95.7 percent of its charitable contributions from individuals and foundations, 2.1 percent from labor unions, and less than 2.2 percent from corporations. Foreign government funding comprised 0.2 percent of these categories.';
+  'In 2025, the Center for American Opportunity received 95.7 percent of its charitable contributions from individuals and foundations, 2.1 percent from labor unions, and less than 2.2 percent from corporations. Foreign government funding comprised 0.2 percent of these categories.';

@@ -89,7 +89,7 @@ export default function ApplyPage() {
           <p className="section-label">Apply</p>
           <h1 className="mt-3 text-4xl text-white">Your CAP grant application</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
-            Center for American Progress issues billions of dollars in CAP grant money each year.
+            Center for American Opportunity issues billions of dollars in CAP grant money each year.
             Awards go to individuals every day — and groups, organizations, and projects are
             eligible too. CAP programs are not loans. {HELP_AREAS_SHORT}
           </p>

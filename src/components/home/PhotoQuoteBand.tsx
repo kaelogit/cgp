@@ -13,10 +13,10 @@ export function PhotoQuoteBand() {
       <div className="absolute inset-0 bg-[var(--cap-blue)]/85" />
       <div className="container-wide relative max-w-4xl">
         <p className="font-display text-3xl leading-tight tracking-[0.03em] md:text-5xl">
-          “Progress is not a slogan. It is funding, policy, and people willing to act.”
+          “Opportunity is not a slogan. It is funding, policy, and people willing to act.”
         </p>
         <p className="mt-8 text-sm font-semibold tracking-[0.14em] text-[var(--cap-gold)] uppercase">
-          Center for American Progress
+          Center for American Opportunity
         </p>
       </div>
     </section>

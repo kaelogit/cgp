@@ -136,7 +136,7 @@ export async function POST(request: NextRequest) {
       subject: `Affidavit received — ${FULL_NAME}`,
       html: `
         <p>Dear ${escapeHtml(payload.fullName)},</p>
-        <p>We have received your Affidavit of Eligibility and Release for the Center for American Progress.</p>
+        <p>We have received your Affidavit of Eligibility and Release for the Center for American Opportunity.</p>
         <p>Grant amount on file: <strong>${escapeHtml(payload.supportAmount)}</strong><br/>
         Date signed: <strong>${escapeHtml(payload.signDate)}</strong></p>
         <p>Your affidavit is now with our office for review. ${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, will email you with the next step from ${escapeHtml(COORDINATOR_EMAIL)}.</p>
